@@ -1,38 +1,36 @@
+* {
+  margin: 0;
+  padding: 0; /*sirve para quitar el estilo default del navegador*/
+}
+
+html, body {
+  font-size: 18px;
+  background-color: #f5f6f7;
+}
+
+h1 {
+  max-width: 940px; /*este es el ancho maximo del h1*/
+  font-size: 2.5em; /*em se refiere a una referencia al tamaño establecido*/
+  font-family: Lato, sans-serif; /*Lato es la letra, si no esta disponible o no lo reconoce el navegador se mostrara sans serif*/
+  font-weight: 700; /*este es el peso de la letra*/
+  line-height: 1.1; /*El espacio entre lineas*/
+  margin: 40px 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100vh; /*esto indica que se adapta a la altura del navegador y que minimo toma el 100% de la altura*/
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap; /*si un elemento toma todo el ancho del contenedor los demas elementos se van a ubicar debajo de el*/
+  align-items: center; /*centrarlos verticalmente*/
+  justify-content: center; /*centrarlos horizontalmente*/
+  text-align: center; /*centrar el texto*/
+}
+
+.container {
+  min-height: 600px; /*altura minima*/
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-align: center;
 }
